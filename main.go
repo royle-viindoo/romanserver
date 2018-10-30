@@ -16,7 +16,7 @@ func main() {
 		if paths[3] == "roman-number" {
 			number, _ := strconv.Atoi(paths[4])
 			if number > 0 && number <= 10 {
-				fmt.Fprintf(w, "%q", html.EscapeString(numerals.Numbers[number]))
+				fmt.Fprintf(w, "%q", html.EscapeString(numerals.Numerals[number]))
 			} else {
 				w.WriteHeader(http.StatusNotFound)
 				w.Write([]byte("404 - Not Found"))
