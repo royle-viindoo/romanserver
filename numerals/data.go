@@ -1,6 +1,6 @@
 package numerals
 
-var Numbers = map[int]string{
+var Numerals = map[int]string{
 	10: "X",
 	9:  "IX",
 	8:  "VIII",
